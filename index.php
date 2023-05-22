@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Accept-CH" content="Viewport-Width, Width" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./fonts/style.css">
     <title>NatuCiencias</title>
 </head>
 
@@ -19,8 +18,9 @@
                     <h1>¡NatuCiencias!</h1>
                 </div>
                 <div class="logo-texto-derecho">
-                    <a href="#">Docente</a>
-                    <a href="index.php">Ayuda</a>
+                    <a href="">| Administrador |</a>
+                    <a href="">| Docente |</a>
+                    <a href="index.php"><span class="icon-help-with-circle"></span></a>
                 </div>
             </div>
         </header>
@@ -44,19 +44,25 @@
                 | Servicio Nacional de Aprendizaje
             </p>
         </div>
-        <a href="./Ginicio.php">Iniciar Sesion</a>
         <main>
-            <form action="" method="post" class="formulario">
+            <form action="./iniciarsesion.php" method="post" class="formulario">
                 <h2>¡NatuCiencias!</h2>
                 <h3>Acceder</h3>
+                <div class="mensaje">
+                <?php
+                if(isset($_GET['error'])){
+                    echo $_GET['error'];
+                }
+                ?>
+                </div>
                 <label for="nombre">
-                    <input type="text" id="nombre" name="nombre" placeholder=" Usuario" />
+                    <input type="text" id="nombre" name="usuario" placeholder=" Usuario"/>
                 </label>
                 <label for="contra">
-                    <input type="password" id="contra" name="contra" placeholder=" Contraseña" />
+                    <input type="password" id="contra" name="contrasena" placeholder=" Contraseña"/>
                 </label>
                 <span>¿Olvidaste tu contraseña?</span>
-                <input type="submit" value="Iniciar Sesión" class="button" />
+                <input type="submit" name="inicio" value="Iniciar Sesión" class="button" />
             </form>
         </main>
     </body>

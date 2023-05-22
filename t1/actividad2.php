@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="./style.css">
-  <link rel="stylesheet" href="./estilo-t1.css">
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/estilo-t1.css">
+  <link rel="stylesheet" href="../fonts/style.css">
   <title>NatuCiencias</title>
 </head>
 
@@ -16,29 +16,29 @@
     <div class="contenedor-header">
       <div class="logo-texto">
         <h1>¡NatuCiencias!</h1>
-        <h4><i class='bx bxs-user'></i> Usuario</h4>
+        <h4><span class=" icon-user"></span> Usuario</h4>
       </div>
       <div class="logo-texto-derecho">
-        <a href="../index.php">Cerrar Sesión</i></a>
+        <a href="../index.php"><span class="icon-log-out"></span></a>
       </div>
     </div>
   </header>
   <div class="navegacion">
     <div class="nav-container">
       <div class="container-a active">
-        <a href="../Ginicio.php"><i class='bx bxs-home'></i></a>
+      <a href="../Ginicio.php"><span class="icon-home"></span></a>
       </div>
       <div class="container-a active">
-        <a href="explica.php"><i class='bx bxs-videos'></i></a>
+        <a href="explica.php"><span class="icon-video"></span></a>
       </div>
       <div class="container-a active">
-        <a href=""><i class='bx bxs-cube-alt'></i></a>
+        <a href="./actividad1.php"><span class="icon-game-controller"></span></a>
       </div>
       <div class="container-a active">
-        <a href=""><i class='bx bxs-check-square'></i></a>
+        <a href="./evalua.php"><span class="icon-check"></span></a>
       </div>
       <div class="container-a active">
-        <a href=""><i class='bx bx-wifi-off'></i></a>
+        <a href="./pdf.php"><span class="icon-open-book"></span></a>
       </div>
     </div>
   </div>
@@ -63,38 +63,152 @@
     </p>
   </div>
 
-  <!-- codigo explica -->
+  <!-- codigo actividad2-->
   <h1 class="h1">Completa la Imagen</h1>
   <div class="insecto">
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span>
+  <span>
+  <select name="Esófago">
+    <option>[Esófago]</option>
+    <option>Esófago</option>
+    <option>Buche</option>
+    <option>Intestino Medio</option>
+    <option>Boca</option>
+    <option>Piezas Bucale</option>
+    <option>Glándula Salivar</option>
+    <option>Colon</option>
+    <option>Recto</option>
+    <option>Ano</option>
+    </select>
+  </span>
+  <span>
+  <select name="Buche">
+    <option>[Buche]</option>
+    <option>Esófago</option>
+    <option>Buche</option>
+    <option>Intestino Medio</option>
+    <option>Boca</option>
+    <option>Piezas Bucale</option>
+    <option>Glándula Salivar</option>
+    <option>Colon</option>
+    <option>Recto</option>
+    <option>Ano</option>
+    </select>
+  </span>
+  <span>
+  <select name="Intestino Medio">
+    <option>[Intestino Medio]</option>
+    <option>Esófago</option>
+    <option>Buche</option>
+    <option>Intestino Medio</option>
+    <option>Boca</option>
+    <option>Piezas Bucale</option>
+    <option>Glándula Salivar</option>
+    <option>Colon</option>
+    <option>Recto</option>
+    <option>Ano</option>
+    </select>
+  </span>
+  <span>
+  <select name="Boca">
+    <option>[Boca]</option>
+    <option>Esófago</option>
+    <option>Buche</option>
+    <option>Intestino Medio</option>
+    <option>Boca</option>
+    <option>Piezas Bucale</option>
+    <option>Glándula Salivar</option>
+    <option>Colon</option>
+    <option>Recto</option>
+    <option>Ano</option>
+    </select>
+  </span>
+  <span>
+  <select name="Piezas Bucales">
+    <option>[Piezas Bucales]</option>
+    <option>Esófago</option>
+    <option>Buche</option>
+    <option>Intestino Medio</option>
+    <option>Boca</option>
+    <option>Piezas Bucale</option>
+    <option>Glándula Salivar</option>
+    <option>Colon</option>
+    <option>Recto</option>
+    <option>Ano</option>
+    </select>
+  </span>
+  <span>
+  <select name="Glándula Salivar">
+    <option>[Glándula Salivar]</option>
+    <option>Esófago</option>
+    <option>Buche</option>
+    <option>Intestino Medio</option>
+    <option>Boca</option>
+    <option>Piezas Bucale</option>
+    <option>Glándula Salivar</option>
+    <option>Colon</option>
+    <option>Recto</option>
+    <option>Ano</option>
+    </select>
+  </span>
+  <span>
+  <select name="Colon">
+    <option>[Colon]</option>
+    <option>Esófago</option>
+    <option>Buche</option>
+    <option>Intestino Medio</option>
+    <option>Boca</option>
+    <option>Piezas Bucale</option>
+    <option>Glándula Salivar</option>
+    <option>Colon</option>
+    <option>Recto</option>
+    <option>Ano</option>
+    </select>
+  </span>
+  <span>
+  <select name="Recto">
+    <option>[Recto]</option>
+    <option>Esófago</option>
+    <option>Buche</option>
+    <option>Intestino Medio</option>
+    <option>Boca</option>
+    <option>Piezas Bucale</option>
+    <option>Glándula Salivar</option>
+    <option>Colon</option>
+    <option>Recto</option>
+    <option>Ano</option>
+    </select>
+  </span>
+  <span>
+  <select name="Ano">
+    <option>[Ano]</option>
+    <option>Esófago</option>
+    <option>Buche</option>
+    <option>Intestino Medio</option>
+    <option>Boca</option>
+    <option>Piezas Bucale</option>
+    <option>Glándula Salivar</option>
+    <option>Colon</option>
+    <option>Recto</option>
+    <option>Ano</option>
+    </select>
+  </span>
+  </div>
+  <div class="ver-sig">
+  <div class="boton">
+    <form action="">
+  <input type="submit" value="Verificar">
+  </form>
   </div>
   <div class="boton">
-  <input type="subtmit" value="Verificar">
+    <form action="./actividad3.php">
+    <input type="submit" value="Siguiente">
+    </form>
   </div>
-  <div class="boton">
-  <a href="">Siguiente</a>
   </div>
   <br>
   <!-- codigo del footer -->
   <footer>
     <div class="contenido-footer">
-      <div class="item">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ab mollitia quam dolor facere nisi!
-      </div>
-      <div class="item">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro eos nulla dolorem quaerat aliquid iure!
-      </div>
-      <div class="item">
-        LLorem, ipsum dolor sit amet consectetur adipisicing elit. Porro eos nulla dolorem quaerat aliquid iure!
-      </div>
     </div>
     <div class="copy">
       <h2>© 2023 NatuCiencias - All Rights Reserved</h2>

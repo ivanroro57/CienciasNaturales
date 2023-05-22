@@ -63,21 +63,21 @@
     </p>
   </div>
 
-<!-- codigo explica -->
-<h1 class="h1">Nutricion en Animales</h1>
-<div class="video">
-<iframe class="video" src="https://www.youtube.com/embed/L8NUX4xWHkU?controls=1&amp;start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <!-- codigo pdf -->
+  <h1 class="h1">Actividades en Pdf</h1>
+  <div class="pdf-view">
+<iframe src="./pdf/actividad1.pdf" type="aplication/pdf"></iframe>
 </div>
 
 
-  <!-- codigo del footer -->
-  <footer>
+<!-- codigo del footer -->
+<footer>
     <div class="contenido-footer">
     </div>
     <div class="copy">
-        <h2>© 2023 NatuCiencias - All Rights Reserved</h2>
+      <h2>© 2023 NatuCiencias - All Rights Reserved</h2>
     </div>
-</footer>
+  </footer>
 </body>
 
 </html>

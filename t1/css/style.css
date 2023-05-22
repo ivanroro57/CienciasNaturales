@@ -67,9 +67,6 @@ header .contenedor-header .logo-texto-derecho a {
   text-decoration: none;
   font-size: var(--font-size-a);
 }
-header .contenedor-header .logo-texto-derecho a::after {
-  content: " |";
-}
 /*---codigo de navegacion---*/
 .navegacion{
     max-width: 1000px;
@@ -109,7 +106,7 @@ header .contenedor-header .logo-texto-derecho a::after {
   margin: 0 auto;
   width: 100%;
   max-width: 1000px;
-  background-image: url(../images/t2.png);
+  background-image: url(../../images/t2.png);
   background-position: right;
   background-repeat: no-repeat;
   background-size: contain;
@@ -150,7 +147,7 @@ header .contenedor-header .logo-texto-derecho a::after {
 footer {
   /* border: 1px solid black; */
   width: 100%;
-  background-color: var(--verde-principal);
+  /* background-color: var(--verde-principal); */
   display: grid;
   grid-template-rows: 1fr 0.30fr;
 }
@@ -287,7 +284,6 @@ main .formulario .button {
 
 .main-container .card .nombre-card {
   margin: 0;
-  border-bottom: 1px solid gr;
 }
 .card .nombre-card .titulo {
   padding-left: 10px;

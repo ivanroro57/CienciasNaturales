@@ -1,11 +1,16 @@
+<?php
+  // include 'conexion.php';
+  // session_destroy();
+  
+?>
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./css/style.css">
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="./fonts/style.css">
+  <!-- <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> -->
   <title>NatuCiencias</title>
 </head>
 
@@ -14,17 +19,17 @@
             <div class="contenedor-header">
                 <div class="logo-texto">
                     <h1>¡NatuCiencias!</h1>
-                    <h4><i class='bx bxs-user'></i> Usuario</h4>
+                    <h4><span class="icon-user"></span> Usuario</h4>
                 </div>
                 <div class="logo-texto-derecho">
-                    <a href="index.php">Cerrar Sesion</a>
+                    <a href="./cerrarsesion.php"><span class="icon-log-out"></span></a>
                 </div>
             </div>
         </header>
         <div class="navegacion">
             <div class="nav-container">
               <div class="container-a active">
-              <a href="./Ginicio.php"><i class='bx bxs-home'></i></a>
+              <a href="./Ginicio.php"><span class="icon-home"></span></a>
               </div>
             </div>
             </div>
@@ -125,15 +130,6 @@
   </main>
   <footer>
     <div class="contenido-footer">
-        <div class="item">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ab mollitia quam dolor facere nisi!
-        </div>
-        <div class="item">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro eos nulla dolorem quaerat aliquid iure!
-        </div>
-        <div class="item">
-        LLorem, ipsum dolor sit amet consectetur adipisicing elit. Porro eos nulla dolorem quaerat aliquid iure!
-        </div>
     </div>
     <div class="copy">
         <h2>© 2023 NatuCiencias - All Rights Reserved</h2>

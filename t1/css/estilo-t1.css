@@ -1,0 +1,288 @@
+
+.video{
+    /* border: 1px solid red; */
+    text-align: center;
+    margin-bottom: 20px;
+}
+.video iframe{
+    max-width: 800px;
+    width: 100%;
+    height: 400px;
+}
+.h1{
+    margin: 20px auto;
+    max-width: 1000px;
+    width: 100%;
+    text-align: center;
+    font: normal 45px Georgia, "Times New Roman", Times, serif; 
+    color: #6d6d6d;
+}
+
+/* actividad 1 codigo ave */
+
+    .ave{
+        margin: 0 auto;
+        max-width: 560px;
+        min-height: 358;
+        width: 50%;
+        height: 60vh;
+        /* border: 1px solid red; */
+        background-image: url(../img/ave1.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        position: relative;
+    }
+    .ave span{
+        position: absolute;
+    }
+    .ave span:first-child{
+        top: 30%;
+      }
+    .ave span:nth-child(2){
+        left: 25%;
+      }
+    .ave span:nth-child(3){
+        top: 48%;
+      }
+      .ave span:nth-child(4){
+        top: 15%;
+        left: 40%;
+      }
+      .ave span:nth-child(5){
+        top: 30%;
+        left: 62%;
+      }
+      .ave span:nth-child(6){
+        top: 68%;
+        left: 10%;
+      }
+      .ave span:nth-child(7){
+        top: 75%;
+        left: 75%;
+      }
+      .ave span:nth-child(8){
+        top: 85%;
+        left: 60%;
+      }
+      /* codigo actividad 2 insecto */
+      .insecto{
+        margin: 0 auto;
+        max-width: 560px;
+        min-height: 358;
+        width: 50%;
+        height: 60vh;
+        /* border: 1px solid red; */
+        background-image: url(../img/inse.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        position: relative;
+      }
+      .insecto span{
+        position: absolute;
+      }
+      .insecto span:first-child{
+        top: 70%;
+      }
+      .insecto span:nth-child(2){
+        left: 35%;
+        top: 15%;
+      }
+      .insecto span:nth-child(3){
+        left: 52%;
+        top: 5%;
+      }
+      .insecto span:nth-child(4){
+        left: 15%;
+        top: 80%;
+      }
+      .insecto span:nth-child(5){
+        left: 16%;
+        top: 91%;
+      }
+      .insecto span:nth-child(6){
+        left: 39%;
+        top: 91%;
+      }
+      .insecto span:nth-child(7){
+        left: 72%;
+        top: 88%;
+      }
+      .insecto span:nth-child(8){
+        left: 82%;
+        top: 38%;
+      }
+      .insecto span:nth-child(9){
+        left: 96%;
+        top: 57%;
+      }
+      /* codigo actividad 3 Gato */
+      .gato{
+        margin: 0 auto;
+        max-width: 560px;
+        min-height: 358px;
+        width: 50%;
+        height: 60vh;
+        /* border: 1px solid red; */
+        background-image: url(../img/gato.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        position: relative;
+      }
+      .gato span{
+        position: absolute;
+      }
+      .gato span:first-child{
+        top: 48%;
+      }
+      .gato span:nth-child(2){
+        left: 2%;
+        top: 56%;
+      }
+      .gato span:nth-child(3){
+        top: 64%;
+        left: 6%;
+      }
+      .gato span:nth-child(4){
+        top: 65%;
+        left: 42%;
+      }
+      .gato span:nth-child(5){
+        top: 70%;
+        left: 58%;
+      }
+      .gato span:nth-child(6){
+        top: 64%;
+        left: 65%;
+      }
+      .gato span:nth-child(7){
+        top: 8%;
+        left: 38%;
+      }
+      .gato span:nth-child(8){
+        top: 13%;
+        left: 50%;
+      }
+      .gato span:nth-child(9){
+        top: 7.5%;
+        left: 60%;
+      }
+      .gato span:nth-child(10){
+        top: 14%;
+        left: 68%;
+      }
+      .gato span:nth-child(11){
+        top: 25%;
+        left: 85%;
+      }
+      .gato span:nth-child(12){
+        top: 44%;
+        left: 85%;
+      }
+.ver-sig{
+  width: 100%;
+  height: 60px;
+  max-width: 600px;
+  /* border: 1px solid #000; */
+  margin: 0 auto;
+}
+.ver-sig .boton{
+  /* border: 1px solid red; */
+  width: 170px;
+  height: 100%;
+  padding: 7px;
+  display: inline-block;
+  text-align: center;
+}
+/* .ver-sig .btn-container{
+  border: 1px solid blue;
+  max-width: 1000px;
+  text-align: left;
+}
+.ver-sig .btn-evalua{
+  text-align: center;
+  color: #025930;
+} */
+.ver-sig .boton input{
+  width: 150px;
+  height: 40px;
+  border: none;
+  border-radius: 6px;
+  background-color: #025930;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+.ver-sig .boton input:hover{
+  background-color: rgba(0, 0, blue, 0.7);
+}
+/* codigo evalua */
+.columna {
+	margin: 20px auto;
+  border: none;
+	padding:20px;
+  max-width: 1000px;
+  width: 65%;
+  max-height:1000px;
+  height: 750px;
+  color: white;
+  background-color: #5cad69;
+  border-radius:7px;
+  text-align:left;
+  font-size:20px;
+}
+.columna h1{
+	font-size:24px;
+	padding:7px;
+	color:#390;
+	background:#fff;
+	border-radius:10px;}
+.columna label{
+  margin-right: 10px;
+}
+.columna .btn-evalua{
+  color: white;
+  margin-top: 10px;
+  padding: 10px;
+  width: 200px;
+  height: 50px;
+  background-color: #025930;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+}
+/* codigo del pdf */
+.pdf-view{
+  margin: 10px auto;
+  max-width: 1000px;
+  width: 50%;
+  height: 70vh;
+}
+.pdf-view iframe{
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+@media screen and (min-width: 581px) and (max-width: 800px)
+{
+  .h1{
+    font-size: 35px;
+  }
+  .ave{
+    width: 60%;
+    height: 40vh;
+  }
+    }
+      @media screen and (max-width: 580px)
+{
+  .h1{
+    font-size: 30px;
+  }
+  .ave{
+    height: 35vh;
+    width: 90%;
+  }
+}
