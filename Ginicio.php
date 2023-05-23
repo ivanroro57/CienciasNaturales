@@ -19,7 +19,16 @@
             <div class="contenedor-header">
                 <div class="logo-texto">
                     <h1>¡NatuCiencias!</h1>
-                    <h4><span class="icon-user"></span> Usuario</h4>
+                    <h4><span class="icon-user"></span>
+                    <?php 
+		session_start();
+		if (isset($_SESSION["usuario"])){
+      echo ucfirst($_SESSION["usuario"]);
+			// echo strtoupper($_SESSION["usuario"]);
+		}
+		else 
+		header("location:index.php");
+		?></h4>
                 </div>
                 <div class="logo-texto-derecho">
                     <a href="./cerrarsesion.php"><span class="icon-log-out"></span></a>

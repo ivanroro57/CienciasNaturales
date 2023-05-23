@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Accept-CH" content="Viewport-Width, Width" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./fonts/style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../fonts/style.css">
     <title>NatuCiencias</title>
 </head>
 
@@ -18,8 +18,7 @@
                     <h1>¡NatuCiencias!</h1>
                 </div>
                 <div class="logo-texto-derecho">
-                    <a href="./admin/index.php">| Administrador |</a>
-                    <a href="./docente/index.php">| Docente |</a>
+                    <a href="../index.php">| Sesion Estudiante |</a>
                     <a href="index.php"><span class="icon-help-with-circle"></span></a>
                 </div>
             </div>
@@ -28,13 +27,12 @@
             <div class="contenedor-texto">
                 <h2 class="big-text">
                     <span>
-                        Divierte,aprende y juega
+                        Bienvenido Docente
                     </span>
                     <br>
-                    Innovando en
-                    Ciencias
+                    Crea y Gestiona
                     <br>
-                    Naturales.
+                    Estudiantes.
                 </h2>
             </div>
         </div>
