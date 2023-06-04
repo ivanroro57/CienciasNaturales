@@ -29,7 +29,7 @@ if(isset($_POST['usuario']) && isset($_POST['contrasena'])){
             if($row['usuario']=== $usuario && $row['contrasena']===$contrasena){
                 $_SESSION['usuario']=$row['usuario'];
                 $_SESSION['id']=$row['id'];
-                header("location: ./Ginicio.php");
+                header("location: ./regusuario.php");
                 exit();
             }
             else{

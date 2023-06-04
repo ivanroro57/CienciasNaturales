@@ -224,29 +224,32 @@
   border: none;
 	padding:20px;
   max-width: 1000px;
-  width: 65%;
-  max-height:1000px;
-  height: 750px;
+  width: 60%;
+  height: auto;
   color: white;
-  background-color: #5cad69;
+  background-color: #6bbf78;
   border-radius:7px;
   text-align:left;
-  font-size:20px;
+  font-size:16px;
 }
 .columna h1{
-	font-size:24px;
+	font-size:20px;
 	padding:7px;
-	color:#390;
+	color: #6d6d6d;
 	background:#fff;
 	border-radius:10px;}
 .columna label{
+  display: block;
   margin-right: 10px;
+  font-size: 18px;
+  color: #fff;
+  margin: 10px;
 }
 .columna .btn-evalua{
   color: white;
   margin-top: 10px;
   padding: 10px;
-  width: 200px;
+  width: 40%;
   height: 50px;
   background-color: #025930;
   border: none;
@@ -258,8 +261,8 @@
 .pdf-view{
   margin: 10px auto;
   max-width: 1000px;
-  width: 50%;
-  height: 70vh;
+  width: 60%;
+  height: 80vh;
 }
 .pdf-view iframe{
   width: 100%;
@@ -283,6 +286,18 @@
   }
   .ave{
     height: 35vh;
+    width: 90%;
+  }
+  .columna {
+    width: 90%;
+  }
+  .columna h1{
+    font-size: 17px;
+  }
+  .columna label{
+    font-size: 16px;
+  }
+  .pdf-view{
     width: 90%;
   }
 }

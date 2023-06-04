@@ -1,8 +1,3 @@
-<?php
-  // include 'conexion.php';
-  // session_destroy();
-  
-?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./fonts/style.css">
-  <!-- <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> -->
   <title>NatuCiencias</title>
 </head>
 
@@ -117,7 +111,7 @@
   </div>
   <div class="nombre-card">
    <h4 class="titulo">Nutrición en los Animales</h4>
-   <p>Tematica #1</p>
+   <p>Tematica #5</p>
  </div>
  <div class="button-card">
    <a href="">Ir a Explicacion</a>
@@ -129,7 +123,7 @@
  </div>
  <div class="nombre-card">
   <h4 class="titulo">Clasificación en Animales</h4>
-  <p>Tematica #2</p>
+  <p>Tematica #6</p>
 </div>
 <div class="button-card">
  <a href="">Ir a Explicacion</a>

@@ -66,18 +66,18 @@
     <!-- codigo de registro estudiantes -->
     <div class="reg-container">
         <form action="<?php echo $_SERVER["PHP_SELF"];?>" method="post" id="" class="reg-form">
-            <h1>Registro de Estudiantes</h1>
+            <h1>Registro de Docentes</h1>
             <hr>
             <?php
 include 'conexion.php';
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Verificar si se han enviado todos los campos del formulario
     if (isset($_POST["nombre"]) && isset($_POST["apellido"]) &&
-        isset($_POST["usuario"]) && isset($_POST["contrasena"]) && isset($_POST["grado"])) {
+        isset($_POST["usuario"]) && isset($_POST["contrasena"])) {
 
         // Verificar si los campos están vacíos
         if ( empty($_POST["nombre"]) || empty($_POST["apellido"]) ||
-            empty($_POST["usuario"]) || empty($_POST["contrasena"]) || empty($_POST["grado"])) {
+            empty($_POST["usuario"]) || empty($_POST["contrasena"])) {
             echo "Por favor, complete todos los campos.";
         } else {
             // Obtener los datos del formulario
@@ -85,22 +85,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $apellido = $_POST["apellido"];
             $usuario = $_POST["usuario"];
             $contrasena = $_POST["contrasena"];
-            $grado = $_POST["grado"];
-
 
             // Verificar si el usuario ya está registrado
-            $query = "SELECT * FROM estudiante WHERE usuario = '$usuario'";
+            $query = "SELECT * FROM docente WHERE usuario = '$usuario'";
             $result = $conexion->query($query);
 
             if ($result->num_rows > 0) {
                 echo "El usuario ya está registrado.";
             } else {
                 // El usuario no está registrado, realizar el proceso de inserción de datos
-                $insertQuery = "INSERT INTO estudiante (id, nombre, apellido, usuario, contrasena, grado) 
-                                VALUES ('', '$nombre', '$apellido', '$usuario', '$contrasena', '$grado')";
+                $insertQuery = "INSERT INTO docente (id, nombre, apellido, usuario, contrasena) 
+                                VALUES ('', '$nombre', '$apellido', '$usuario', '$contrasena')";
 
                 if ($conexion->query($insertQuery) === TRUE) {
-                    echo "Perfecto tu estudiante ya puede iniciar sesion!";
+                    echo "Perfecto el docente ya puede iniciar sesion!";
                 } else {
                     echo "Error al registrar los datos: " . $conexion->error;
                 }
@@ -127,18 +125,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <label for="contrasena">Ingresa la contraseña</label><br>
             <input name="contrasena" type="password" id="contrasena" placeholder="Contraseña" /><br>
 
-            <h2>Selecciona el grado</h2>
-            <label for="grado">Grado:</label>
-            <select name="grado" class="grado">
-                <option>601</option>
-                <option>602</option>
-                <option>603</option>
-                <option>604</option>
-                <option>605</option>
-                <option>606</option>
-            </select>
 
-            <input type="submit" name="registrar" value="Registrar Estudiante" class="reg-button" />
+            <input type="submit" name="registrar" value="Registrar Docente" class="reg-button" />
 
         </form>
     </div>

@@ -41,15 +41,13 @@
 .reg-container .reg-form h2 {
   margin-top: 10px;
   margin-bottom: 5px;
-  color: #212529;
+  color: var(--verde-principal);
   font: var(--font-size-h4) Georgia, "Times New Roman", Times, serif;
 }
 .reg-container .reg-form .grado {
   width: 30%;
-  margin-bottom: 20px;
-  text-align: center;
   color: white;
-  background-color: #212529;
+  background-color: var(--verde-principal);
   font-size: 17px;
   border: none;
 }

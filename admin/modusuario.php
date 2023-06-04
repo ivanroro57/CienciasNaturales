@@ -69,7 +69,7 @@ include './conexion.php';
     </div>
     <!-- codigo de registro estudiantes -->
     <div class="reg-container">
-        <h1>Lista de Estudiantes</h1>
+        <h1>Lista de Docentes</h1>
         
         <table class="table">
             <thead class="thead">
@@ -77,13 +77,12 @@ include './conexion.php';
                 <th>Nombre</th>
                 <th>Apellido</th>
                 <th>Usuario</th>
-                <th>Contrasena</th>
-                <th>Grado</th>
+                <th>Contraseña</th>
                 <th>Accion</th>
             </thead>
             <?php
     // Consulta para obtener los estudiantes
-    $query = "SELECT * FROM estudiante";
+    $query = "SELECT * FROM docente";
     $result = mysqli_query($conexion, $query);
 
     while ($row = mysqli_fetch_assoc($result)) {
@@ -93,7 +92,6 @@ include './conexion.php';
         echo "<td>".$row['apellido']."</td>";
         echo "<td>".$row['usuario']."</td>";
         echo "<td>".$row['contrasena']."</td>";
-        echo "<td>".$row['grado']."</td>";
         echo "<td>";
         echo "<a href='editar.php?id=".$row['id']."'>Editar</a><br>";
         echo "<a href='eliminar.php?id=".$row['id']."'>Eliminar</a>";
