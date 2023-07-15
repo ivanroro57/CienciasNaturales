@@ -1,26 +1,54 @@
-*{
+* {
   text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.reg-container {
-  /* border: 1px solid red; */
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1000px;
-  height: 100vh;
+.general-container {
+  background-image: url(../../images/fondo-registro1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.reg-container .reg-form {
-  margin: 20px auto;
-  padding: 15px;
-  width: 50%;
-  border: 1px solid #212529;
-  height: auto;
-  border-radius: 5px;
-}
-.reg-container .reg-form h1 {
+.general-container h1{
   text-align: center;
   color: #212529;
   font: normal var(--font-size-h1) Georgia, "Times New Roman", Times, serif;
   margin-bottom: 10px;
+}
+.reg-container {
+  margin: 0 auto;
+  padding: 10px;
+  background-image: url(../../images/fondo-registro1.jpg);
+  width: 100%;
+  max-width: 1000px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  box-shadow: 0 0 10px #000;
+}
+.reg-container .reg-form {
+  width: 90%;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 10px;
+}
+.reg-container .reg-form .avatar {
+  margin-bottom: 5px;
+  text-align: center;
+  background-image: url(../../images/fondo-registro1.jpg);
+  border-radius: 10px;
+}
+.reg-container .reg-form h1 {
+  text-align: center;
+  color: #2ab5b4;
+  font: normal var(--font-size-h1) Georgia, "Times New Roman", Times, serif;
+  margin-bottom: 10px;
+}
+.reg-container .reg-form hr {
+  border: #2ab5b4 1px solid;
+  margin-bottom: 3px;
 }
 .reg-container h1 {
   text-align: center;
@@ -29,19 +57,22 @@
   margin-bottom: 10px;
 }
 .reg-container .reg-form label {
-  color: #212529;
+  color: #000;
   width: 100%;
   font-size: 20px;
 }
 .reg-container .reg-form input {
+  margin-top: 10px;
   width: 100%;
-  height: 35px;
-  margin-bottom: 15px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-bottom: 2px solid #ccc;
 }
 .reg-container .reg-form h2 {
   margin-top: 10px;
   margin-bottom: 5px;
-  color: #212529;
+  color: #2ab5b4;
   font: var(--font-size-h4) Georgia, "Times New Roman", Times, serif;
 }
 .reg-container .reg-form .grado {
@@ -49,41 +80,42 @@
   margin-bottom: 20px;
   text-align: center;
   color: white;
-  background-color: #212529;
+  background-color: #2ab5b4;
   font-size: 17px;
   border: none;
 }
 .reg-container .reg-form .reg-button {
   color: white;
-  background-color: black;
+  background-color: #2ab5b4;
   font-size: var(--font-size-a);
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 .reg-container .reg-form .reg-button:hover {
-  background-color: #212529;
+  background-color: #71a7d5;
 }
+/* ----tabla que meustra los registros ----*/
 .reg-container .table {
   width: 100%;
   text-align: center;
   border-collapse: collapse;
   font: normal Georgia, "Times New Roman", Times, serif;
 }
-.reg-container .table .thead{
+.reg-container .table .thead {
   background-color: #212529;
   height: 46px;
   color: white;
 }
-.reg-container .table tr{
-  border-bottom: 1px solid #dee2e6;
+.reg-container .table tr {
+  border-bottom: 2px solid #fff;
   height: 46px;
 }
-.reg-container .table a{
+.reg-container .table a {
   font-size: 16px;
   color: #212529;
 }
-.reg-container .table a:hover{
+.reg-container .table a:hover {
   color: black;
 }
 @media screen and (max-width: 800px) {

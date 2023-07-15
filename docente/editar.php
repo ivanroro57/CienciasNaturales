@@ -38,7 +38,8 @@ mysqli_close($conexion);
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../fonts/style.css">
     <link rel="stylesheet" href="./css/estilo-docente.css">
-    <title>NatuCiencias</title>
+    <title>NatuCiencias - Docente</title>
+
 </head>
 
 <body>
@@ -54,7 +55,7 @@ mysqli_close($conexion);
 			// echo strtoupper($_SESSION["usuario"]);
 		}
 		else 
-		header("location:index.php");
+		header("location:./index.php");
 		?>
                 </h4>
             </div>
@@ -94,37 +95,42 @@ mysqli_close($conexion);
         </p>
     </div>
     <!-- codigo de registro estudiantes -->
-    <div class="reg-container">
+    <div class="general-container">
+        <div class="reg-container">
 
-        <form method="POST" action="" class="reg-form">
-            <h1>Editar Estudiante</h1>
-            <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
+            <form method="POST" action="" class="reg-form">
+                <div class="avatar">
+                    <img src="../images/avatar.png" height="200" width="200" alt="">
+                </div>
+                <h1>Editar Estudiante</h1>
+                <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
 
-            <label for="nombre">Nombre:</label>
-            <input type="text" name="nombre" value="<?php echo $row['nombre']; ?>">
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" value="<?php echo $row['nombre']; ?>">
 
-            <label for="apellido">apellido:</label>
-            <input type="text" name="apellido" value="<?php echo $row['apellido']; ?>">
+                <label for="apellido">Apellido:</label>
+                <input type="text" name="apellido" value="<?php echo $row['apellido']; ?>">
 
-            <label for="usuario">Usuario:</label>
-            <input type="text" name="usuario" value="<?php echo $row['usuario']; ?>">
+                <label for="usuario">Usuario:</label>
+                <input type="text" name="usuario" value="<?php echo $row['usuario']; ?>">
 
-            <label for="usuario">contrasena:</label>
-            <input type="text" name="contrasena" value="<?php echo $row['contrasena']; ?>">
+                <label for="usuario">Contrasena:</label>
+                <input type="text" name="contrasena" value="<?php echo $row['contrasena']; ?>">
 
-            <h2>Selecciona el grado</h2>
-            <label for="grado">Grado:</label>
-            <select name="grado" class="grado" value="<?php echo $row['grado']; ?>">
-                <option>601</option>
-                <option>602</option>
-                <option>603</option>
-                <option>604</option>
-                <option>605</option>
-                <option>606</option>
-            </select>
-            <!-- <input type="text" name="grado" value="<?php echo $row['grado']; ?>"><br><br> -->
-            <input type="submit" value="Guardar cambios" class="reg-button">
-        </form>
+                <h2>Selecciona el grado</h2>
+                <label for="grado">Grado:</label>
+                <select name="grado" class="grado" value="<?php echo $row['grado']; ?>">
+                    <option>601</option>
+                    <option>602</option>
+                    <option>603</option>
+                    <option>604</option>
+                    <option>605</option>
+                    <option>606</option>
+                </select>
+                <!-- <input type="text" name="grado" value="<?php echo $row['grado']; ?>"><br><br> -->
+                <input type="submit" value="Guardar cambios" class="reg-button">
+            </form>
+        </div>
     </div>
     <!-- codigo del footer -->
     <footer>

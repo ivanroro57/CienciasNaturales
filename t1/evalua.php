@@ -7,11 +7,14 @@
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/estilo-t1.css">
   <link rel="stylesheet" href="../fonts/style.css">
+  <link id="theme-style"rel="stylesheet" href="./prueba-light.css">
   <title>NatuCiencias</title>
 </head>
 
 <body>
   <!-- codigo del header y marca -->
+  <button id="theme-toggle" onclick="changeTheme()"><span class="icon-light-up"></span></button>
+  <script src="tema.js"></script>
   <header>
     <div class="contenedor-header">
       <div class="logo-texto">

@@ -1,0 +1,33 @@
+body{
+    background-color: #0b0b0b;
+    color:#ffffff;
+}
+
+.main-container{
+    background-color: #0b0b0b;
+}
+.texto-grande .contenedor-texto h2.big-text {
+    color: #ffffff;
+}
+.main-container .card {
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.8);
+}
+.card .nombre-card .titulo {
+    color: #ffffff;
+}
+h1{
+    color:#ffffff;
+}
+button{
+    position: fixed;
+    top: 40%;
+    right: 5px;
+    background-color: #00ced1;
+    color: #fff;
+    border: none;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    padding: 10px;
+    cursor:pointer;
+}

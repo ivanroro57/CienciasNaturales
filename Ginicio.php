@@ -5,10 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./fonts/style.css">
-  <title>NatuCiencias</title>
+  <link id="theme-style"rel="stylesheet" href="./prueba-light.css">
+  <title>NatuCiencias - Tematicas</title>
 </head>
 
 <body>
+<button id="theme-toggle" onclick="changeTheme()"><span class="icon-light-up"></span></button>
+    <script src="tema.js"></script>
     <header>
             <div class="contenedor-header">
                 <div class="logo-texto">
@@ -33,6 +36,9 @@
             <div class="nav-container">
               <div class="container-a active">
               <a href="./Ginicio.php"><span class="icon-home"></span></a>
+              </div>
+              <div class="container-a active">
+              <a href="./juegos/index.html"><span class="icon-game-controller"></span></a>
               </div>
             </div>
             </div>
@@ -65,8 +71,8 @@
       <h4 class="titulo">Nutrición en los Animales</h4>
       <p>Tematica #1</p>
     </div>
-    <div class="button-card">
-      <a href="./t1/explica.php">Ir a Explicacion</a>
+    <div class="button-card  ">
+      <a href="./t1/explica.php" class="button-card1" >Ir a Explicacion</a>
     </div>
   </div>
   <div class="card">
@@ -78,7 +84,7 @@
      <p>Tematica #2</p>
    </div>
    <div class="button-card">
-    <a href="./t2/explica.php">Ir a Explicacion</a>
+    <a href="./t2/explica.php" class="button-card2">Ir a Explicacion</a>
    </div>
  </div>
  <div class="card">
@@ -90,7 +96,7 @@
    <p>Tematica #3</p>
  </div>
  <div class="button-card">
-  <a href="">Ir a Explicacion</a>
+  <a href="" class="button-card3">Ir a Explicacion</a>
  </div>
 </div>
 <div class="card">
@@ -102,7 +108,7 @@
    <p>Tematica #4</p>
  </div>
  <div class="button-card">
-  <a href="">Ir a Explicacion</a>
+  <a href="" class="button-card4">Ir a Explicacion</a>
  </div>
 </div>
 <div class="card">
@@ -114,7 +120,7 @@
    <p>Tematica #5</p>
  </div>
  <div class="button-card">
-   <a href="">Ir a Explicacion</a>
+   <a href="" class="button-card5">Ir a Explicacion</a>
  </div>
 </div>
 <div class="card">
@@ -126,7 +132,7 @@
   <p>Tematica #6</p>
 </div>
 <div class="button-card">
- <a href="">Ir a Explicacion</a>
+ <a href="" class="button-card6">Ir a Explicacion</a>
 </div>
 </div>
 </div>

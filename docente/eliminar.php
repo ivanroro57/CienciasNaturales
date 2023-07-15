@@ -12,5 +12,5 @@ mysqli_query($conexion, $query);
 mysqli_close($conexion);
 
 // Redireccionar a la página principal
-header("Location: regusuario.php");
+header("Location:./regusuario.php");
 ?>

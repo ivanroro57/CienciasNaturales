@@ -1,0 +1,152 @@
+
+.main-container {
+  max-width: 700px;
+  margin:0 auto;
+}
+h1.titulo {
+  margin: 50px auto 80px auto;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+  color: #099;
+}
+h1#msg-final {
+  text-align: center;
+  color: crimson;
+  transition: all .5s ease;
+  transform: scale(0);
+  min-height: 50px;
+  margin-bottom: 0;
+ 
+}
+.zoom-in {
+  transform: scale(1) !important;
+}
+#acierto {
+  text-align: center;
+  min-height: 24px;
+  transform: scale(0);
+}
+.acierto {
+  animation: zoomInOut 1s ease;
+}
+.rojo {
+  color: red;
+}
+.verde {
+  color: green;
+}
+@keyframes zoomInOut {
+  0% { transform: scale(0); }
+  50% { transform: scale(1); }
+  70% { transform: scale(1); }
+  100% { transform: scale(0); }
+}
+h2.palabra {
+  margin: 0 auto 25px auto;
+  text-align: center;
+  color: royalblue;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+.flex-row {
+  
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 20px 0px; 
+  width:650px;
+}
+.no-wrap {
+  flex-wrap: nowrap !important;
+}
+.col {
+  width: 100%;
+  text-align:left;
+}
+.col span {
+  margin: 5px 8px;
+  font-size: 20px;
+  color:#930;
+  text-align: left;
+  
+}
+#turnos h3 {
+  margin:5px;
+  text-align: left;
+  color:#ED1233;
+  font-size:22px;
+}
+h3 span {
+   color:blue;
+}
+.letra:disabled {
+  color:rgba(255, 0, 0, 0.5);
+}
+picture {
+  margin: 0 80px;
+  position: relative;
+}
+picture img {
+  position: absolute;
+  top: -203px;
+  left: -205px;
+  height: 225px;
+}
+#image5, #image4, #image3,
+#image2, #image1, #image0 {
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+.fade-in {
+  opacity: 1 !important;
+}
+.encuadre {
+  width:350px;
+  border: 2px dashed crimson;
+  padding: 3px 2px 2px 6px;
+}
+button{
+  padding: 4px;
+  border: none;
+  border-radius:5px;
+  background: #095;
+  margin: 5px;
+  color: #fff;
+  font-size: 28px;
+  border-color: #000;
+  height: 40px;
+  width:40px;
+  cursor: pointer;
+  float: left;
+}
+button:hover{
+  background: #099;
+  margin: 5px;
+  color: #fff;
+  font-size: 28px;
+  border-color: #000;
+  height: 40px;
+  cursor: pointer;
+}
+.titulo{
+	margin:0px 10px 7px 50px;
+	height:100px;
+	display:block;
+	background:#09C;
+	font-size:50px;
+	padding:0px;
+	border:5px solid #0C0;
+	border-radius:10px;
+	color:#fff;
+	width:90%;
+	font:bolder;
+	}
+  .clear{
+    clear: both;
+  }
+.boton button{
+	background:#099;
+	width:18%;
+	font-size:18px;}
+.boton button:hover{
+	background:#F90;
+	}

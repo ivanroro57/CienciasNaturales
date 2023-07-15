@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../fonts/style.css">
     <link rel="stylesheet" href="./css/estilo-docente.css">
-    <title>NatuCiencias</title>
+    <title>NatuCiencias - Docente</title>
 </head>
 
 <body>
@@ -64,19 +64,24 @@
         </p>
     </div>
     <!-- codigo de registro estudiantes -->
+    <div class="general-container">
     <div class="reg-container">
         <form action="<?php echo $_SERVER["PHP_SELF"];?>" method="post" id="" class="reg-form">
+        <div class="avatar">
+            <img src="../images/avatar.png" height="200" width="200"alt="">
+        </div>
             <h1>Registro de Estudiantes</h1>
             <hr>
-            <?php
+           <?php
 include 'conexion.php';
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Verificar si se han enviado todos los campos del formulario
     if (isset($_POST["nombre"]) && isset($_POST["apellido"]) &&
         isset($_POST["usuario"]) && isset($_POST["contrasena"]) && isset($_POST["grado"])) {
 
         // Verificar si los campos están vacíos
-        if ( empty($_POST["nombre"]) || empty($_POST["apellido"]) ||
+        if (empty($_POST["nombre"]) || empty($_POST["apellido"]) ||
             empty($_POST["usuario"]) || empty($_POST["contrasena"]) || empty($_POST["grado"])) {
             echo "Por favor, complete todos los campos.";
         } else {
@@ -87,22 +92,30 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $contrasena = $_POST["contrasena"];
             $grado = $_POST["grado"];
 
+            // Verificar la longitud de la contraseña
+            if (strlen($contrasena) < 6) {
+                echo "La contraseña debe tener al menos 6 caracteres.";
+            }
+            elseif (!preg_match("/[!@#$%^&*(),.?\":{}|<>]/", $contrasena)) {
+                echo "La contraseña debe contener al menos un carácter especial !@#$%^&*(),.?";
+            } 
+            else {
+                // Verificar si el usuario ya está registrado
+                $query = "SELECT * FROM estudiante WHERE usuario = '$usuario'";
+                $result = $conexion->query($query);
 
-            // Verificar si el usuario ya está registrado
-            $query = "SELECT * FROM estudiante WHERE usuario = '$usuario'";
-            $result = $conexion->query($query);
-
-            if ($result->num_rows > 0) {
-                echo "El usuario ya está registrado.";
-            } else {
-                // El usuario no está registrado, realizar el proceso de inserción de datos
-                $insertQuery = "INSERT INTO estudiante (id, nombre, apellido, usuario, contrasena, grado) 
-                                VALUES ('', '$nombre', '$apellido', '$usuario', '$contrasena', '$grado')";
-
-                if ($conexion->query($insertQuery) === TRUE) {
-                    echo "Perfecto tu estudiante ya puede iniciar sesion!";
+                if ($result->num_rows > 0) {
+                    echo "El usuario ya está registrado.";
                 } else {
-                    echo "Error al registrar los datos: " . $conexion->error;
+                    // El usuario no está registrado, realizar el proceso de inserción de datos
+                    $insertQuery = "INSERT INTO estudiante (id, nombre, apellido, usuario, contrasena, grado) 
+                                    VALUES ('', '$nombre', '$apellido', '$usuario', '$contrasena', '$grado')";
+
+                    if ($conexion->query($insertQuery) === TRUE) {
+                        echo "¡Perfecto! Tu estudiante ya puede iniciar sesión.";
+                    } else {
+                        echo "Error al registrar los datos: " . $conexion->error;
+                    }
                 }
             }
 
@@ -114,21 +127,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 ?>
+
             <hr>
-            <label for="nombre">Nombres:</label><br>
-            <input name="nombre" type="text" id="nombre" placeholder="Escribe los nombres" /><br>
-
-            <label for="apellido">Apellidos:</label><br>
-            <input name="apellido" type="text" id="apellido" placeholder="Escribe los apellidos" /><br>
-
-            <label for="usuario">Ingresa el Usuario</label><br>
-            <input name="usuario" type="text" id="usuario" placeholder="Nombre de usuario" /><br>
-
-            <label for="contrasena">Ingresa la contraseña</label><br>
-            <input name="contrasena" type="password" id="contrasena" placeholder="Contraseña" /><br>
+            <input name="nombre" type="text" id="nombre" placeholder="Escribe los nombres" />
+            <input name="apellido" type="text" id="apellido" placeholder="Escribe los apellidos" />
+            <input name="usuario" type="text" id="usuario" placeholder="Nombre de usuario" />
+            <input name="contrasena" type="password" id="contrasena" placeholder="Contraseña(123456#)" /><br>
 
             <h2>Selecciona el grado</h2>
-            <label for="grado">Grado:</label>
             <select name="grado" class="grado">
                 <option>601</option>
                 <option>602</option>
@@ -142,6 +148,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         </form>
     </div>
+</div>
     <!-- codigo del footer -->
     <footer>
         <div class="contenido-footer">

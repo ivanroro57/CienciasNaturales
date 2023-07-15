@@ -15,7 +15,7 @@
     width: 100%;
     text-align: center;
     font: normal 45px Georgia, "Times New Roman", Times, serif; 
-    color: #6d6d6d;
+    color: #0b0b0b;
 }
 
 /* actividad 1 codigo ave */
@@ -210,7 +210,7 @@
   height: 40px;
   border: none;
   border-radius: 6px;
-  background-color: #025930;
+  background-color: #c8c901;
   font-size: 18px;
   color: white;
   cursor: pointer;
@@ -227,7 +227,7 @@
   width: 60%;
   height: auto;
   color: white;
-  background-color: #6bbf78;
+  background-color: #00ced1;
   border-radius:7px;
   text-align:left;
   font-size:16px;
@@ -251,7 +251,7 @@
   padding: 10px;
   width: 40%;
   height: 50px;
-  background-color: #025930;
+  background-color: #c8c901;
   border: none;
   border-radius: 8px;
   font-size: 18px;

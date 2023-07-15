@@ -7,12 +7,12 @@ include './conexion.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./css/estilo-docente.css">
+    <link rel="stylesheet" href="./css/estilo-admin.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../fonts/style.css">
     <!-- Bootstrap CSS v5.2.1 -->
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous"> -->
-    <title>NatuCiencias</title>
+    <title>NatuCiencias - Administrador</title>
 </head>
 
 <body>
@@ -68,8 +68,9 @@ include './conexion.php';
         </p>
     </div>
     <!-- codigo de registro estudiantes -->
+    <div class="general-container">
+    <h1>Lista de Docentes</h1>
     <div class="reg-container">
-        <h1>Lista de Docentes</h1>
         
         <table class="table">
             <thead class="thead">
@@ -102,6 +103,7 @@ include './conexion.php';
     ?>
         </table>
     </div>
+</div>
     <!-- codigo del footer -->
     <!-- <footer>
         <div class="contenido-footer">

@@ -7,11 +7,14 @@
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/estilo-t1.css">
   <link rel="stylesheet" href="../fonts/style.css">
+  <link id="theme-style"rel="stylesheet" href="./prueba-light.css">
   <title>NatuCiencias</title>
 </head>
 
 <body>
   <!-- codigo del header y marca -->
+  <button id="theme-toggle" onclick="changeTheme()"><span class="icon-light-up"></span></button>
+  <script src="tema.js"></script>
   <header>
     <div class="contenedor-header">
       <div class="logo-texto">
@@ -42,6 +45,19 @@
       </div>
     </div>
   </div>
+  <div class="navegacion">
+        <div class="nav-container">
+            <div class="container-a active">
+                <a href="./actividad1.php">Juego1</a>
+            </div>
+            <div class="container-a active">
+                <a href="./actividad2.php">Juego2</a>
+            </div>
+            <div class="container-a active">
+                <a href="./actividad3.php">Juego3</a>
+            </div>
+        </div>
+    </div>
   <div class="texto-grande">
     <div class="contenedor-texto">
       <h2 class="big-text">
@@ -199,11 +215,11 @@
   <input type="submit" value="Verificar">
   </form>
   </div>
-  <div class="boton">
+  <!-- <div class="boton">
     <form action="./actividad3.php">
     <input type="submit" value="Siguiente">
     </form>
-  </div>
+  </div> -->
   </div>
   <br>
   <!-- codigo del footer -->

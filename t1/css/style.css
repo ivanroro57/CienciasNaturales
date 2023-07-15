@@ -1,7 +1,7 @@
 :root {
   /*colores*/
   --verde1: #025930;
-  --verde-principal: #6bbf78;
+  --verde-principal: #04c900;
   --gris: #e6e6e6;
   --naranja: #d9a404;
   --span: #6abf79;
@@ -85,7 +85,7 @@ header .contenedor-header .logo-texto-derecho a {
   padding: 14px;
 }
 .nav-container .active {
-  background-color: #74CF81;
+  background-color: var(--verde-principal);
   border-top: 1px solid white;
 }
 .nav-container .active:hover{
@@ -115,7 +115,7 @@ header .contenedor-header .logo-texto-derecho a {
   margin-left: 10px;
   padding: 15px 0 0;
   font: normal var(--font-size-h1) Georgia, "Times New Roman", Times, serif; 
-  color: #6d6d6d;
+  color: #0b0b0b;
   letter-spacing: -2px;
 }
 /* h2.big-text{ font-size: calc(1em + 1vw) }; */
@@ -177,7 +177,7 @@ footer .contenido-footer .item {
 footer .copy {
   text-align: center;
   width: 100%;
-  background-color: #5cad69;
+  background-color: var(--verde-principal);
   padding-top: 15px;
 }
 footer .copy h2 {

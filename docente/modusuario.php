@@ -12,7 +12,8 @@ include './conexion.php';
     <link rel="stylesheet" href="../fonts/style.css">
     <!-- Bootstrap CSS v5.2.1 -->
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous"> -->
-    <title>NatuCiencias</title>
+    <title>NatuCiencias - Docente</title>
+
 </head>
 
 <body>
@@ -28,7 +29,7 @@ include './conexion.php';
 			// echo strtoupper($_SESSION["usuario"]);
 		}
 		else 
-		header("location:index.php");
+		header("location:./index.php");
 		?>
                 </h4>
             </div>
@@ -68,9 +69,10 @@ include './conexion.php';
         </p>
     </div>
     <!-- codigo de registro estudiantes -->
+    <div class="general-container">
+    <h1>Lista de Estudiantes</h1>
     <div class="reg-container">
-        <h1>Lista de Estudiantes</h1>
-        
+        <br>
         <table class="table">
             <thead class="thead">
                 <!-- <th>ID</th> -->
@@ -104,6 +106,8 @@ include './conexion.php';
     ?>
         </table>
     </div>
+    </div>
+    <br>
     <!-- codigo del footer -->
     <!-- <footer>
         <div class="contenido-footer">
